@@ -1,0 +1,249 @@
+@import "normalize";
+
+@charset "utf-8";
+
+$pink:#EE2A7B;
+$background:#d1d1d1;
+$bodybackground:white;
+$speakerbackground:#333333;
+
+@mixin center { margin-left:auto; margin-right:auto; }
+.center {@include center;text-align:center;}
+html {
+  background: $background;
+  font-weight:100;
+
+
+}
+
+body {
+  .wrap {
+    width:600px;
+    @include center;
+
+  }
+  .sidebar {
+    width:125px;
+    text-align: right;
+    h1 {font-size:16px;text-align:center;}
+    vertical-align: top;
+    .button {}
+    .sidebar-table {
+      width:125px;
+      @include center;
+      vertical-align: top;
+      text-align:center;
+      img {max-width:80px;}
+
+    }
+  }
+  .body-sidebar {
+    width:475px;
+    text-align: left;
+    h2 {text-align:left; font-size:18px;margin:7px 15px;}
+    h1 {font-size:16px;text-align:left;}
+    p {text-align:left;margin: 20px 15px;}
+    vertical-align: top;
+    .button {text-align:left;}
+  }
+  background:$bodybackground;
+  width:600px;
+  @include center;
+  img.featured-image {
+    width:600px;
+  }
+  .sponsor-container {
+    width:600px;
+    max-width:600px;
+    table {
+      width:600px;
+      max-width:600px;
+      tr{
+        height:110px;
+        td {
+          max-width:100px;
+          img {
+            width:98px;
+            max-width:100px;
+          }
+        }
+      }
+    }
+
+  }
+  #speakers {
+    background: $speakerbackground;
+    h1 {color:white;text-align:left;}
+    ul {list-style:none;
+
+      margin:0;
+      text-align:left;
+      span.list-name {
+        color:white;
+        font-weight:600;
+
+      }
+      span.list-title {
+        color:white;
+
+      }
+    }
+  }
+  div.container {
+    width: 600px;
+    max-width:600px;
+    
+    table.table2 {
+      width:600px;
+      tr {
+        max-height: 500px;
+
+        td {
+
+          padding: 15px 0px;
+          width:182px;
+          text-align:center;
+          vertical-align: top;
+
+          .speaker-text {
+            width:182px;
+            background: $pink;
+            padding: 10px 0px;
+            @include center;
+          }
+          img {
+            width:182px;
+            margin-bottom:0px;
+          }
+          .speaker-name {
+            font-weight: 600;
+          }
+          .speaker-name, .speaker-title {
+            color:white;
+            margin-bottom: 5px;
+
+          }
+
+
+        }
+
+      }
+
+
+
+    }
+    
+
+
+  }
+  
+  div.button {
+    text-align:center;
+    a {
+      padding: 10px 15px;
+      background: $pink;
+      letter-spacing: 2px;
+      color: white;
+      text-decoration:none;
+      text-transform: uppercase;
+    }
+    padding: 20px;
+
+  }
+  h1 {
+    margin: 5px 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 4px;
+
+  }
+  
+
+
+}
+table.table3 {
+     width:427px;
+      tr {
+        max-height: 500px;
+
+        td {
+
+          padding: 15px 0px;
+          width:182px;
+          text-align:center;
+          vertical-align: top;
+
+          .speaker-text {
+            width:182px;
+            background: $pink;
+            padding: 10px 0px;
+            @include center;
+          }
+          img {
+            width:182px;
+            margin-bottom:0px;
+          }
+          .speaker-name {
+            font-weight: 600;
+          }
+          .speaker-name, .speaker-title {
+            color:white;
+            margin-bottom: 5px;
+
+          }
+
+
+
+        }
+
+      }
+
+
+
+    }
+table.table4 {
+     width:600px;
+      tr {
+        max-height: 500px;
+
+        td {
+
+          padding: 15px 0px;
+          width:350px;
+          text-align:center;
+          vertical-align: top;
+
+          .speaker-text {
+            width:350px;
+            background: $pink;
+            padding: 10px 0px;
+            @include center;
+          }
+          img {
+            width:350px;
+            margin-bottom:0px;
+          }
+          .speaker-name {
+            font-weight: 600;
+          }
+          .speaker-name, .speaker-title {
+            color:white;
+            margin-bottom: 5px;
+
+          }
+          .speaker-title {
+            
+          }
+
+
+        }
+
+      }
+
+
+
+    }
+.full-width {
+  width:600px;
+}
