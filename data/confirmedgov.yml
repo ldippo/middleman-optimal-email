@@ -1,0 +1,58 @@
+#template 2 email form just fill out the blue one space after the colon! 
+#example boldtext: fedscoop presents fedtalks the best event ever!
+
+
+
+#for the about section
+about:
+-
+  boldtext:
+  bodytext:
+
+#for the featured speakers section, we will handle img field :-)
+featured:
+-
+  name:
+  title:
+  agency:
+  img:
+
+#left column for confirmed govvies
+column1:
+-
+  name: 
+  title: 
+  agency: 
+-
+  name: 
+  title: 
+  agency: 
+-
+  name: 
+  title: 
+  agency: 
+-
+  name: 
+  title: 
+  agency: 
+
+#right column for confirmed govvies
+column2:
+-
+  name: 
+  title: 
+  agency: 
+-
+  name: 
+  title: 
+  agency: 
+-
+  name: 
+  title: 
+  agency: 
+-
+  name: 
+  title: 
+  agency: 
+
+

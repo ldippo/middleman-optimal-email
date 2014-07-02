@@ -1,0 +1,48 @@
+sponsors:
+-
+  name: intel
+  link: http://intel.com/federal
+  image: ../images/logos/intel.png
+-
+  name: hp
+  link: http://hp.com
+  image: ../images/logos/hp.png
+-
+  name: symantec
+  link: http://symantec.com
+  image: ../images/logos/symantec1.png
+-
+  name: vmware
+  link: http://vmware.com
+  image: ../images/logos/vmware1.png
+-
+  name: AWS
+  link: http://aws.amazon.com
+  image: ../images/logos/amazonwebservices1.png
+-
+  name: netapp
+  link: http://netapp.com
+  image: ../images/logos/netapp.png
+-
+  name: Uber
+  link: http://uber.com
+  image: ../images/logos/uber1.png
+-
+  name: Pirates Booty
+  link: http://piratebrands.com
+  image: ../images/logos/piratesbooty.png
+-
+  name: kind
+  link: http://kindsnacks.com
+  image: ../images/logos/kind.png
+-
+  name: popchips
+  link: http://popchips.com
+  image: ../images/logos/popchips1.png
+-
+  name: perky jerky
+  link: http://perkyjerky.com
+  image: ../images/logos/perkyjerky1.png
+
+
+

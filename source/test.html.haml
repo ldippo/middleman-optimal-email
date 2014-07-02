@@ -1,12 +1,10 @@
 !!!
 
 .container
-  %img.featured-image(src="../images/ftfeatured.png") 
+  %img.featured-image(src="http://placehold.it/600x500/333333&text=Featured Image") 
 .container
-  %br
   .button
     = link_to "Register Now" , "#"
-  %br
   %h1.center Just Announced Featured Speaker
 .container
   %table#speakers.table4
@@ -54,18 +52,18 @@
                   %span.list-name Speaker |
                   %span.list-title Title
 .container
-  %br
   .button
     = link_to "View all speakers" , "#"
-  %br
 %h1 Sponsors
 .sponsor-container
-  - data.sponsors.sponsors.each_with_index do |imgcontainer|
-    .imgcontainer2(align="center")
-      %a{href: "#{imgcontainer.link}"}
-        %img{valign: "middle", alt: "#{imgcontainer.name}", src: "#{imgcontainer.image}", width: 60}
+  %table
+  - data.sponsors.sponsors.each_with_index do |td|
+    %tr
+      %td(align="center")
+        .imgcontainer2(align="center")
+          %a{href: "#{td.link}"}
+            %img{height: 98, src: "#{td.image}", width: 98}
 .container
-  %br
   .button
     = link_to "Find out more" , "#"
 

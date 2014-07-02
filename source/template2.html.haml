@@ -1,101 +1,103 @@
 !!!
 
 .container
-  %img.featured-image(src="http://placehold.it/600x500/333333&text=Featured Image") 
+  %img.featured-image(src="../images/ftfeatured.png")  
 .container
-  %table
+  %br
+  .button
+    = link_to "Register Now" , "#"
+  %br
+  %h1 Today's Featured Speakers
+.container
+  %table#speakers.table2
     %tr
-      %td.body-sidebar
-        %h1 About
-        %h2 Register today for FedScoop’s 6th Annual Lowering the Cost of Government with IT Summit!
-        %p This event will bring together top government and industry IT leaders to discuss the best ways government can become more efficient and save money through the use of innovative technologies.
-        %p Lowering the Cost of Government w/IT Summit will feature sessions on customer engagement, security, mobility, open source and a variety of other best practices for lowering the government’s cost of doing business. 
-        %p Save your seat today to hear from a dynamic lineup of speakers and join the discussion!
-
-        %h1 Speakers
-
-        %table.table3
+      %td  
+        %table.table2
           %tr
-            %td  
-              %table.table3
+            %td
+              %img.speaker-img(height=182 src="http://placehold.it/200x200/111&text=Speaker" width=182)
+              %table.speaker-text.table2
                 %tr
                   %td
-                    %img.speaker-img(src="http://placehold.it/200x200/111&text=Speaker")
-                    %table.speaker-text.table3
-                      %tr
-                        %td
-                          .speaker-name Speaker Name
-                          .speaker-title Title
+                    .speaker-name Speaker Name
+                    .speaker-title Title
+            %td
+              %img.speaker-img(height=182 src="http://placehold.it/200x200/111&text=Speaker" width=182)
+              %table.speaker-text.table2
+                %tr
                   %td
-                    %img.speaker-img(src="http://placehold.it/200x200/111&text=Speaker")
-                    %table.speaker-text.table3
-                      %tr
-                        %td
-                          .speaker-name Speaker Name
-                          .speaker-title Title
-      
-      %td.sidebar
-        .button
-          = link_to "Register" , "#"
-        %h1 Sponsors
-        %table.sidebar-table
+                    .speaker-name Speaker Name
+                    .speaker-title Title
+            %td
+              %img.speaker-img(height=182 src="http://placehold.it/200x200/111&text=Speaker" width=182)
+              %table.speaker-text.table2
+                %tr
+                  %td
+                    .speaker-name Speaker Name
+                    .speaker-title Title
+        %h1 Confirmed Government Speakers
+        %table.table2
           %tr
             %td
-              %img(src="http://fedscoop.com/events/fedtalks/assets/intel.png")
-          %tr
+              %ul
+                %li
+                  %span.list-name  Speaker |
+                  %span.list-title Title
+                %li
+                  %span.list-name Speaker |
+                  %span.list-title Title
+                %li
+                  %span.list-name Speaker |
+                  %span.list-title Title
+                %li
+                  %span.list-name Speaker |
+                  %span.list-title Title
             %td
-              %img(src="http://fedscoop.com/events/fedtalks/assets/intel.png")
-          %tr
-            %td
-              %img(src="http://fedscoop.com/events/fedtalks/assets/intel.png")
-          %tr
-            %td
-              %img(src="http://fedscoop.com/events/fedtalks/assets/intel.png")
-          %tr
-            %td
-              %img(src="http://fedscoop.com/events/fedtalks/assets/intel.png")
-          %tr
-            %td
-              %img(src="http://fedscoop.com/events/fedtalks/assets/intel.png")
-.container#speakers
-  %br
-  %h1 Confirmed Government Speakers
-  %table.table2
-    %tr
-      %td
-        %ul
-          %li
-            %span.list-name  Speaker |
-            %span.list-title Title
-          %li
-            %span.list-name Speaker |
-            %span.list-title Title
-          %li
-            %span.list-name Speaker |
-            %span.list-title Title
-          %li
-            %span.list-name Speaker |
-            %span.list-title Title
-      %td
-        %ul
-          %li
-            %span.list-name Speaker |
-            %span.list-title Title
-          %li
-            %span.list-name Speaker |
-            %span.list-title Title
-          %li
-            %span.list-name Speaker |
-            %span.list-title Title
-          %li
-            %span.list-name Speaker |
-            %span.list-title Title
+              %ul
+                %li
+                  %span.list-name Speaker |
+                  %span.list-title Title
+                %li
+                  %span.list-name Speaker |
+                  %span.list-title Title
+                %li
+                  %span.list-name Speaker |
+                  %span.list-title Title
+                %li
+                  %span.list-name Speaker |
+                  %span.list-title Title
 .container
+  %br
+  .button
+    = link_to "View all speakers" , "#"
+  %br
+%h1 Sponsors
+.sponsor-container
+  - data.sponsors.sponsors.each_with_index do |imgcontainer|
+    .imgcontainer2(align="center")
+      %a{href: "#{imgcontainer.link}"}
+        %img{valign: "middle", alt: "#{imgcontainer.name}", src: "#{imgcontainer.image}", width: 60}
+.container
+  %br
   .button
     = link_to "Find out more" , "#"
 
 
-              
 
 
 
+    
+
+  
+
+
+
+
+     
+
+
+
+    
+
+
+ 

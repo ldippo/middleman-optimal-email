@@ -5,10 +5,14 @@ require 'premailer'
 # Compass
 ###
 
+
 # Change Compass configuration
 # compass_config do |config|
 #   config.output_style = :compact
 # end
+compass_config do |config|
+  config.output_style = :compressed
+end
 
 ###
 # Page options, layouts, aliases and proxies
@@ -28,7 +32,8 @@ set :haml, { :ugly => true, :format => :html5 }
 # with_layout :admin do
 #   page "/admin/*"
 # end
-page "/index.html", :layout => false
+
+# page "/index.html", :layout => false
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
@@ -38,7 +43,7 @@ page "/index.html", :layout => false
 ###
 
 # Automatic image dimensions on image_tag helper
- activate :automatic_image_sizes
+# activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
  configure :development do
@@ -78,7 +83,7 @@ end
 ::Middleman::Extensions.register(:inline_premailer, PreMailer)
 
 activate :inline_premailer
-MiniMagick.processor = :gm
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
@@ -94,7 +99,7 @@ configure :build do
 
   activate :imageoptim
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+   activate :minify_css
 
   # Minify Javascript on build
   # activate :minify_javascript

@@ -9,11 +9,10 @@
     <title><%= current_page.data.title || "The Middleman" %></title>
     
     <link href="./stylesheets/all.css" type="text/css" rel="stylesheet">
-    
-    <% css_path = sitemap.resources.select { |p| p.source_file.match(/all[.]css[.]scss$/) }.first %> 
-    <style>
-      <%= css_path.render %>
-    </style>
+    <% css_path = sitemap.resources.select { |p| p.source_file.match(/all[.]css[.]scss$/) }.first %>
+<style>
+    <%= css_path.render %>
+</style>
   </head>
   
   <body>
